@@ -1,0 +1,73 @@
+body {
+    header {
+
+        div.container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                width: 25%;
+            }
+
+            .search {
+                width: 50%;
+                display: flex;
+                input {
+                    display: block;
+                    width: 100%;
+                }
+                #search-btn {
+                    width: 25%;
+                    display: block;
+                }
+            }
+
+            
+            .accountcontroller {
+                display: flex;
+                width: 25%;
+
+                > div {
+                }
+                div.hoverdisplay {
+                    position: relative;
+                    form {
+                        position: absolute;
+                        z-index: 100;
+
+                        display: none;
+                        padding: 15px;
+
+
+                        background-color: #fff;
+                        box-shadow: 0px 0px 5px #333;
+
+                    }
+                }
+                div.hoverdisplay:hover form {
+                    display: block;
+
+                }
+
+                #loginform, #registrationform {
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+#account-info {
+    #asd {
+        padding: 3%;
+        form {
+            box-shadow: 0 0 25px rgb(182, 180, 180);
+            padding: 3%;
+        }
+        form:first-child {
+            margin-right: 3%;
+        }
+    }
+}

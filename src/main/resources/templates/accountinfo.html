@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+    <head>
+        <div th:replace="common :: myMeta"></div>
+    </head>
+    <body id="account-info">
+        <header class="container-fluid" th:replace="common :: header">
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <ul class="list-group">
+                        <li class="list-group-item active" id="myInfo">My information</li>
+                        <li class="list-group-item" id="myOrders">My orders</li>
+                        <li class="list-group-item" id="myReviews">My review</li>
+                        <li class="list-group-item" id="myPaymentMethods">My payment methods</li>
+                        <li class="list-group-item" id="myAddress">My address</li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <main>
+                        <div class="forms d-flex justify-content-between" style="display: none" target-id="myInfo">
+                            <form id="userinfo-form" class="w-50 p-3">
+                                <h3>User information</h3>
+                                <div class="form-group">
+                                    Username: <span th:text="${myUser.username}"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="u-fullName">Full Name: </label>
+                                    <input name="fullName" id="u-fullName" th:value="${myUser.fullName}"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="u-phoneNumber">Phone Number: </label>
+                                    <input name="phoneNumber" id="u-phoneNumber" th:value="${myUser.phoneNumber}"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="u-email">Email: </label>
+                                    <input name="email" id="u-email" th:value="${myUser.email}"/>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                </div>
+                            </form>
+
+                            <form id="updatepassword-form" class="w-50 p-3">
+                                <h3>Change password</h3>
+                                <div class="form-group">
+                                    <label for="old-pw">Current password:</label>
+                                    <input type="password" id="old-pw" name="old-pw"><br>
+                                    <div class="error" style="color: red; font-weight: bold"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="new-pw">New password:</label>
+                                    <input type="password" id="new-pw" name="new-pw"><br>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary">Confirm</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div target-id="myOrders" class="display-none">
+                            My Orders: still working on this. please comeback later
+                        </div>
+
+                        <div target-id="myPaymentMethods" class="display-none">
+                            My Payment Methods: still working on this. please comeback later
+                        </div>
+
+                        <div target-id="myReviews" class="display-none">
+                            My Reviews: still working on this. please comeback later
+                        </div>
+
+                        <div target-id="myAddress" class="display-none">
+                            My Address: still working on this. please comeback later
+                        </div>
+                    </main>
+
+                </div>
+            </div>
+        </div>
+        <div th:insert="common :: footer"></div>
+    </body>
+</html>

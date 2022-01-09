@@ -1,0 +1,222 @@
+body header div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header div.container .logo {
+  width: 25%;
+}
+
+body header div.container .search {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header div.container .search input {
+  display: block;
+  width: 100%;
+}
+
+body header div.container .search #search-btn {
+  width: 25%;
+  display: block;
+}
+
+body header div.container .accountcontroller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+}
+
+body header div.container .accountcontroller div.hoverdisplay {
+  position: relative;
+}
+
+body header div.container .accountcontroller div.hoverdisplay form {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px #333;
+          box-shadow: 0px 0px 5px #333;
+}
+
+body header div.container .accountcontroller div.hoverdisplay:hover form {
+  display: block;
+}
+
+body header div.container .accountcontroller form {
+  color: black;
+}
+
+body header {
+    background-color: rgb(26, 148, 255);
+    padding: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+#account-info  form {
+  -webkit-box-shadow: 0 0 24px #cdcdcd;
+          box-shadow: 0 0 24px #cdcdcd;
+  padding: 3%;
+}
+
+#account-info  form:first-child {
+  margin-right: 3%;
+}
+
+.display-none {
+  display: none !important;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html, body, #admin-page > div, #admin-page > #admin-page .d-flex > div{
+    height: 100%;
+}
+#admin-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#admin-page #topnav {
+    box-shadow: 0 0 5px #ddd;
+    height: 50px;
+}
+
+#admin-page #left {
+    background-color: #333;
+    color: #ddd;
+    box-shadow: 0 0 5px #ccc;
+    min-width: 245px;
+    width: 10%;
+}
+
+#admin-page #left button {
+    background-color: #333;
+    color: #ddd;
+    border: none;
+    padding: 15px;
+    text-align: left;
+}
+
+#admin-page #list-tab a {
+    padding: 25px 0;
+    padding-left: 45px;
+    background-color: transparent;
+    border: none;
+    color: #ddd;
+}
+
+#admin-page #list-tab a.active {
+    color: #dedede;
+    background: #454545;
+}
+
+#admin-page #right {
+    width: 100%;
+}
+
+#admin-page #main {
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+
+#admin-page #content {
+}
+
+#admin-page #userinfo {
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+
+#admin-page #userinfo .img-holder {
+    width: 50%;
+}
+
+
+#admin-page #welcome-text {
+    font-family: 'Pacifico', cursive;
+}
+
+#admin-page #logo {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: rgb(160 255 247);
+}
+
+#admin-page #main {
+    padding: 3%;
+}
+
+#admin-page #main #nav-tabContent #list-user-management form,
+#admin-page #main #nav-tabContent #list-product-management form,
+#admin-page #main #nav-tabContent #list-category-management form
+{
+    padding: 2% 0;
+}
+
+#admin-page #main #nav-tabContent #list-user-management .row .col,
+#admin-page #main #nav-tabContent #list-product-management .row .col,
+#admin-page #main #nav-tabContent #list-category-management .row .col {
+    padding: 1.5%;
+    background-color: #f3f3f3;
+}
+
+#admin-page #main #nav-tabContent #list-user-management .row.data-header .col,
+#admin-page #main #nav-tabContent #list-product-management .row.data-header .col,
+#admin-page #main #nav-tabContent #list-category-management .row.data-header .col {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #646464;
+    color: #efefef;
+}
+
+#admin-page .my-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+
+    display: none;
+
+    background: rgba(0,0,0,0.5);
+}
+
+#admin-page .my-modal .modal-close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+#admin-page .my-modal form {
+    padding: 5%;
+    background-color: #fff;
+    width: 450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
